@@ -95,9 +95,9 @@ public void AntiBhopCheat_OnClientDetected(int client, char[] sReason, char[] sS
 		iClientComms = SBPP_CheckerGetClientsComms(client);
 	#endif
 
-		FormatEx(sPlayer, sizeof(sPlayer), "%N (%d bans - %d comms) [%s] is suspected of using %s", client, iClientBans, iClientComms, sAuth, sReason);
+		FormatEx(sPlayer, sizeof(sPlayer), "%N (%d bans - %d comms) %s is suspected of using %s", client, iClientBans, iClientComms, sAuth, sReason);
 	} else {
-		FormatEx(sPlayer, sizeof(sPlayer), "%N [%s] %s.", client, sAuth, sReason);
+		FormatEx(sPlayer, sizeof(sPlayer), "%N %s %s.", client, sAuth, sReason);
 	}
 
 	char sTime[64];
